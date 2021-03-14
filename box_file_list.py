@@ -3,12 +3,15 @@ from boxsdk import Client
 
 """
 処理ロジック
-①BOXAPIを認証する設定ファイルを指定する
-②対象のBOXID(folder-id)を指定する
-③BOXID(folder-id)の配下のディレクトリを取得する
-④[result_yyyymmddss.txt]に出力させる
+・BOXAPIを認証する設定ファイルを指定する
+・環境変数でgitにアップロードしない設定
+・対象のBOXID(folder-id)を指定する
+・BOXID(folder-id)の配下のディレクトリを取得する
+・[result_yyyymmddss.txt]に出力させる
 """
-config_file =
+
+
+
 
 auth = JWTAuth.from_settings_file('./API-TEST1_config.json')
 client = Client(auth)
